@@ -1,0 +1,6 @@
+install.packages("Quandl")
+library(Quandl)
+Quandl.api_key("rCXPt32dg7QbyQyuZ4xx")
+data1 <- Quandl("WIKI/FB")
+data <- Quandl("WIKI/FB",transform="diff")
+data <- Quandl.datatable("ZACKS/FR", ticker="MSFT")
